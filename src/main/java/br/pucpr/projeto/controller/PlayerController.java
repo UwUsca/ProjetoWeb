@@ -29,7 +29,7 @@ public class PlayerController {
     /* ---- MÉTODOS POST ---- */
     @PostMapping // Adiciona player no /players
     @ResponseStatus(HttpStatus.CREATED) // Retorna código 201 (especificação de código de status de código HTTP)
-    public Player addNewPlayer(@RequestBody Player player){ //Converte o JSON para o objeto Player
+    public Player newPlayer(@RequestBody Player player){ //Converte o JSON para o objeto Player
         return playerRepository.save(player); // Salva no banco
     }
 

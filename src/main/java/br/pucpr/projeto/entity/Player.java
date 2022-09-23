@@ -8,18 +8,16 @@ public class Player {
 
     @Id //Identificador da entidade
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Banco incrementa o ID sozinho
-    private Integer id;
+    private Integer id; //Id unico
 
     @Column(nullable = false)
-    private String name;
+    private String name; // Nome player
 
     @Column(nullable = false)
     private String login;
 
     @Column(nullable = false)
     private String password;
-
-
 
     @Override
     public boolean equals(Object o) {
