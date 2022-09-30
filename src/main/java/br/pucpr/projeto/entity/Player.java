@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity //Definindo como Entidade (para tabela no banco)
+@Table(name = "players")
 public class Player {
 
     @Id //Identificador da entidade
@@ -11,7 +12,7 @@ public class Player {
     private Integer id; //Id unico
 
     @Column(nullable = false)
-    private String name; // Nome player
+    private String playerName; // Nome player
 
     @Column(nullable = false)
     private String login;
@@ -41,11 +42,11 @@ public class Player {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getPlayerName() {
+        return playerName;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setPlayerName(String playerName) {
+        this.playerName = playerName;
     }
 
     public String getLogin() {

@@ -7,9 +7,10 @@
 
 Requisitos:
 
-1 - Conexão com banco de dados
+1 - Conexão com banco de dados - FEITO
 2 - Tratamento de Erros
 3 - Autenticação via JWT
-4 - Descrição dos serviços via Swagger (Em andamento)
+4 - Descrição dos serviços via Swagger - FEITO (?)
 5 - Separação das funcionalidades via Microserviços
 6 - Criar rotina para deploy (Docker)
+

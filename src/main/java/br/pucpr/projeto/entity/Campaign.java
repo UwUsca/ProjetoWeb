@@ -3,6 +3,7 @@ package br.pucpr.projeto.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "campaigns")
 public class Campaign {
 
     @Id

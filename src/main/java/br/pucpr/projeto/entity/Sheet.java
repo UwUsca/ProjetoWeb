@@ -3,15 +3,16 @@ package br.pucpr.projeto.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "sheets")
 public class Sheet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(nullable = false)
-    private String creator;
+    private String creatorId;
     @Column(nullable = false)
-    private String character;
+    private String characterName;
     @Column
     private String sheetDescription;
 
@@ -23,17 +24,17 @@ public class Sheet {
     }
 
     public String getCreator() {
-        return creator;
+        return creatorId;
     }
     public void setCreator(String creator) {
-        this.creator = creator;
+        this.creatorId = creator;
     }
 
     public String getCharacter() {
-        return character;
+        return characterName;
     }
     public void setCharacter(String character) {
-        this.character = character;
+        this.characterName = character;
     }
 
     public String getSheetDescription() {
